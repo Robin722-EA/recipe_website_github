@@ -702,3 +702,44 @@ body, html {
 .filter-category-checkbox input[type="radio"]#misc {
     accent-color: var(--catagory-misc);
 }
+
+.serp-item{
+    color: var(--background-color-light);
+}
+
+.serp-headline { 
+    width: var(--width-12col);
+    color: var(--background-color-light);
+    height: 45px;
+    border-bottom: 1px solid var(--background-color-light);
+    padding: 0 0 70px 0;
+    margin: 70px auto 30px auto;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.serp {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    width: var(--width-12col);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.serp-container {
+    grid-column: 1/ span 9;
+}
+
+.serp-item h3 {
+    margin: 0 0 0 50px;
+}
+
+.serp-item h2 {
+    margin: 5px 0 0 50px;
+}
+
+.serp-item p {
+    margin: 5px 0 50px 60px;
+}
