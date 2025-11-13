@@ -743,3 +743,109 @@ body, html {
 .serp-item p {
     margin: 5px 0 50px 60px;
 }
+
+/* Recipe page */
+
+.hero-recipe {
+    background-image: url("https://picsum.photos/1200/800");
+    min-height: 600px;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: var(--background-color-light);
+    margin:0;
+    border-bottom: 1px solid var(--background-color-dark-bg);
+}
+
+.hero-container-recipe {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: var(--grid-gap);
+    width: var(--width-12col);
+    height: 100%;
+}
+
+.hero-text-recipe {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    margin: 200px 0 0 0;
+}
+
+.hero-text-recipe h1{
+   padding:0; /*redundant - Don't Repeat Yourself*/
+   margin:15px 0 15px 0;
+   font-size: 30px;
+   text-transform: uppercase;
+}
+
+.hero-text-recipe h1 span{
+  font-weight: 900;
+}
+
+.hero-text-recipe p{
+    font: 14px;
+}
+
+.recipe-info {
+   display: grid;
+   grid-template-rows: auto auto auto;
+}
+
+.minutes {
+   grid-column: 1/ span 2;
+}
+
+
+
+
+
+
+
+.instructions_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    width: var(--width-12col);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.instructions_textlocation {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    margin: 0 0 0 0;
+}
+
+.instructions_textblock {
+    height: fit-content;
+    background-color: var(--background-color-dark-bg);
+}
+
+.instructions_text {
+    color: var(--background-color-light)
+}
+
+.instructions_text h3 {
+    color: var(--primary-color);
+    padding: 15px 0px 5px 15px;
+}
+
+.instructions_text p {
+    padding: 5px 10px 10px 15px;
+}
+
+.instructions_img_location {
+    grid-column: 9 / span 4;
+    grid-row: 1;
+    margin: 0 0 0 0;
+}
+
+
+.instructions_img_location img {
+  width: 100%;
+  height: 300px;
+}
