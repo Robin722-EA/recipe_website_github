@@ -777,7 +777,7 @@ body, html {
 
 .hero-text-recipe h1{
    padding:0; /*redundant - Don't Repeat Yourself*/
-   margin:15px 0 15px 0;
+   margin:10px 0 10px 0;
    font-size: 30px;
    text-transform: uppercase;
 }
@@ -791,19 +791,61 @@ body, html {
 }
 
 .recipe-info {
-   display: grid;
+   justify-content:space-between;
+   display: flex;
+   grid-column: 1/ span 5;
+   grid-row: 2;
    grid-template-rows: auto auto auto;
 }
 
 .minutes {
-   grid-column: 1/ span 2;
+    display: flex;
+}
+
+.calories {
+    display: flex;
+}
+
+.level {
+    display: flex;
+}
+
+.ingredients {
+    display: grid;
+    grid-column: 1/ span 6;
+    grid-row:3;
 }
 
 
+.ingredients_list {
+    display: flex;
+}
 
+.hero_buttons {
+    display: grid;
+    grid-row: 4;
+    grid-column: 1 / span 4;
+}
 
+.hero_button_button {
+    margin: 10px 0 10px 0 ;
+}
 
+.hero_button_button button {
+    background-color: transparent;
+    border: 1px solid var(--background-color-light);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700px;
+    padding: 8px 12px 8px 12px;
+}
 
+.hero_button_button button a {
+    color: var(--background-color-light);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
 
 .instructions_container {
     display: grid;
