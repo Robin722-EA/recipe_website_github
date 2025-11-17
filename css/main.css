@@ -561,6 +561,7 @@ body, html {
 
 .footer_link {
     display: flex;
+    margin: 5px 0 0 0;
 }
 
 .footer_link_container {
@@ -888,6 +889,73 @@ body, html {
 
 
 .instructions_img_location img {
+  width: 100%;
+  height: 300px;
+}
+
+
+/*kitchen lab */
+
+.content_area {
+    width:100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 130px auto;
+    gap: var(--grid-gap);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.kl_text_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    width: var(--width-12col);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.kl_text_textlocation {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    margin: 0 0 0 0;
+}
+
+.kl_text_textblock {
+    height: 300px;
+    background-color: transparent;
+}
+
+.kl_text_text {
+    color: var(--color_light)
+}
+
+.kl_text_text h3 {
+    color: var(--primary-color);
+    padding: 15px 10px 10px 15px;
+}
+
+.kl_text_text p {
+    padding: 5px 10px 15px 15px;
+}
+
+.kitchen_lab_right_img {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    width: var(--width-12col);
+    height: 100%;
+}
+
+.kl_img_location {
+    grid-column: 7 / span 6;
+    grid-row: 1;
+    margin: 0 0 0 0;
+}
+
+
+.kl_img_location img {
   width: 100%;
   height: 300px;
 }
